@@ -1,0 +1,3 @@
+SELECT * FROM Customers , Orders where Customers.CustomerId = Orders.CustomerId;
+SELECT * FROM Customers Left Outer Join Orders where Customers.CustomerId = Orders.CustomerId;
+Select EmployeeId from Employees where EmployeeID NOT IN (SELECT distinct(EmployeeId) FROM Orders) ;
